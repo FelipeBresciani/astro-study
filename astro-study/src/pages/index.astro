@@ -1,280 +1,482 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-		<div class="itens-center flex">
-				<img src="https://i.pinimg.com/originals/6e/d1/3e/6ed13e2f157c5d8d893466301abeb920.jpg" width="150px"/> 
-				<h1>QUEM SOMOS</h1>
-		</div>
-		<p>aaaaaaaaaaaaaaaaaaaaaa</p>
-<div class="container my-24 px-6 mx-auto">
-  <section class="mb-32 text-gray-800">
-    <h2 class="text-3xl font-bold text-center mb-12">ESCOLHA O SEU PLANO </h2>
+  <nav
+    class="px-2 bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700"
+  >
+    <div class="container flex flex-wrap items-center justify-between mx-auto">
+      <a href="#" class="flex items-center">
+        <img
+          src="https://www.thenewsfetcher.com/wp-content/uploads/2021/10/658-6583023_the-beginning-after-the-end-beginning-after-the.png"
+          class="h-6 mr-3 sm:h-10"
+          alt="Flowbite Logo"
+        />
+        <span
+          class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+          >TBATE</span
+        >
+      </a>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul
+          class="flex flex-col p-4 mt-4 border border-gray-500 rounded-lg bg-gray-500 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+        >
+          <li>
+            <a
+              href="#quemSomos"
+              class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >Quem somos</a
+            >
+          </li>
+          <li>
+            <a
+              href="#planos"
+              class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >Planos</a
+            >
+          </li>
+          <li>
+            <a
+              href="#comoFunciona"
+              class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >Como funciona</a
+            >
+          </li>
+          <li>
+            <a
+              href="#saibaMais"
+              class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >Saiba mais</a
+            >
+          </li>
+          <li>
+            <a
+              href="#FAQ"
+              class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >FAQ</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <div class="grid lg:grid-cols-3 gap-6 lg:gap-x-12">
-      <div class="mb-6 lg:mb-0">
-        <div class="block rounded-lg shadow-lg bg-white h-full">
-          <div class="p-6 border-b border-gray-300 text-center">
-            <p class="uppercase mb-4 text-sm">
-              <strong>Plano silver</strong>
-            </p>
-            <h3 class="text-2xl mb-6">
-              <strong>R$ 15</strong>
-              <small class="text-gray-500 text-sm">/Mês</small>
-            </h3>
-            <button type="button"
-              class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-600 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out w-full"
-              data-mdb-ripple="true" data-ripple-color="light">
-              Buy
-            </button>
-          </div>
-          <div class="p-6">
-            <ol class="list-inside">
-              <li class="mb-4 flex items-center">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
-                  class="text-green-600 w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512">
-                  <path fill="currentColor"
-                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                  </path>
-                </svg>Unlimited updates
-              </li>
-              <li class="mb-4 flex items-center">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
-                  class="text-green-600 w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512">
-                  <path fill="currentColor"
-                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                  </path>
-                </svg>Git repository
-              </li>
-              <li class="mb-4 flex items-center">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
-                  class="text-green-600 w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512">
-                  <path fill="currentColor"
-                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                  </path>
-                </svg>npm installation
-              </li>
-            </ol>
+  <div class="itens-center flex">
+    <img
+      src="https://i.pinimg.com/originals/6e/d1/3e/6ed13e2f157c5d8d893466301abeb920.jpg"
+      width="150px"
+    />
+    <h1 id="quemSomos">QUEM SOMOS</h1>
+  </div>
+  <p>aaaaaaaaaaaaaaaaaaaaaa</p>
+  <div class="container my-24 px-6 mx-auto">
+    <section class="mb-32 text-gray-800">
+      <h2 id="planos" class="text-3xl font-bold text-center mb-12">ESCOLHA O SEU PLANO</h2>
+
+      <div class="grid lg:grid-cols-3 gap-6 lg:gap-x-12">
+        <div class="mb-6 lg:mb-0">
+          <div class="block rounded-lg shadow-lg bg-white h-full">
+            <div class="p-6 border-b border-gray-300 text-center">
+              <p class="uppercase mb-4 text-sm">
+                <strong>Plano silver</strong>
+              </p>
+              <h3 class="text-2xl mb-6">
+                <strong>R$ 15</strong>
+                <small class="text-gray-500 text-sm">/Mês</small>
+              </h3>
+              <button
+                type="button"
+                class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-600 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out w-full"
+                data-mdb-ripple="true"
+                data-ripple-color="light"
+              >
+                Buy
+              </button>
+            </div>
+            <div class="p-6">
+              <ol class="list-inside">
+                <li class="mb-4 flex items-center">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="check"
+                    class="text-green-600 w-4 h-4 mr-2"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                    >
+                    </path>
+                  </svg>Unlimited updates
+                </li>
+                <li class="mb-4 flex items-center">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="check"
+                    class="text-green-600 w-4 h-4 mr-2"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                    >
+                    </path>
+                  </svg>Git repository
+                </li>
+                <li class="mb-4 flex items-center">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="check"
+                    class="text-green-600 w-4 h-4 mr-2"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                    >
+                    </path>
+                  </svg>npm installation
+                </li>
+              </ol>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="mb-6 lg:mb-0">
-        <div class="block rounded-lg shadow-lg bg-white h-full">
-          <div class="p-6 border-b border-gray-300 text-center">
-            <p class="uppercase mb-4 text-sm">
-              <strong>PLANO GOLD</strong>
-            </p>
-            <h3 class="text-2xl mb-6">
-              <strong>R$ 30</strong>
-              <small class="text-gray-500 text-sm">/Mês</small>
-            </h3>
-            <button type="button"
-              class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-yellow-600 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out w-full"
-              data-mdb-ripple="true" data-ripple-color="light">
-              Buy
-            </button>
+        <div class="mb-6 lg:mb-0">
+          <div class="block rounded-lg shadow-lg bg-white h-full">
+            <div class="p-6 border-b border-gray-300 text-center">
+              <p class="uppercase mb-4 text-sm">
+                <strong>PLANO GOLD</strong>
+              </p>
+              <h3 class="text-2xl mb-6">
+                <strong>R$ 30</strong>
+                <small class="text-gray-500 text-sm">/Mês</small>
+              </h3>
+              <button
+                type="button"
+                class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-yellow-600 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out w-full"
+                data-mdb-ripple="true"
+                data-ripple-color="light"
+              >
+                Buy
+              </button>
+            </div>
+            <div class="p-6">
+              <ol class="list-inside">
+                <li class="mb-4 flex items-center">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="check"
+                    class="text-green-600 w-4 h-4 mr-2"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                    >
+                    </path>
+                  </svg>Unlimited updates
+                </li>
+                <li class="mb-4 flex items-center">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="check"
+                    class="text-green-600 w-4 h-4 mr-2"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                    >
+                    </path>
+                  </svg>Git repository
+                </li>
+                <li class="mb-4 flex items-center">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="check"
+                    class="text-green-600 w-4 h-4 mr-2"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                    >
+                    </path>
+                  </svg>npm installation
+                </li>
+                <li class="mb-4 flex items-center">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="check"
+                    class="text-green-600 w-4 h-4 mr-2"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                    >
+                    </path>
+                  </svg>Code examples
+                </li>
+                <li class="mb-4 flex items-center">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="check"
+                    class="text-green-600 w-4 h-4 mr-2"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                    >
+                    </path>
+                  </svg>Premium snippets
+                </li>
+              </ol>
+            </div>
           </div>
-          <div class="p-6">
-            <ol class="list-inside">
+        </div>
+
+        <div class="mb-6 lg:mb-0">
+          <div class="block rounded-lg shadow-lg bg-white h-full">
+            <div class="p-6 border-b border-gray-300 text-center">
+              <p class="uppercase mb-4 text-sm">
+                <strong>PLANO EMERALD</strong>
+              </p>
+              <h3 class="text-2xl mb-6">
+                <strong>R$ 50</strong>
+                <small class="text-gray-500 text-sm">/Mês</small>
+              </h3>
+              <button
+                type="button"
+                class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-green-300 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out w-full"
+                data-mdb-ripple="true"
+                data-ripple-color="light"
+              >
+                Buy
+              </button>
+            </div>
+            <div class="p-6">
+              <ol class="list-inside"></ol>
               <li class="mb-4 flex items-center">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
-                  class="text-green-600 w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512">
-                  <path fill="currentColor"
-                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="check"
+                  class="text-green-600 w-4 h-4 mr-2"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                  >
                   </path>
                 </svg>Unlimited updates
               </li>
               <li class="mb-4 flex items-center">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
-                  class="text-green-600 w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512">
-                  <path fill="currentColor"
-                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="check"
+                  class="text-green-600 w-4 h-4 mr-2"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                  >
                   </path>
                 </svg>Git repository
               </li>
               <li class="mb-4 flex items-center">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
-                  class="text-green-600 w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512">
-                  <path fill="currentColor"
-                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="check"
+                  class="text-green-600 w-4 h-4 mr-2"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                  >
                   </path>
                 </svg>npm installation
               </li>
               <li class="mb-4 flex items-center">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
-                  class="text-green-600 w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512">
-                  <path fill="currentColor"
-                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="check"
+                  class="text-green-600 w-4 h-4 mr-2"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                  >
                   </path>
                 </svg>Code examples
               </li>
               <li class="mb-4 flex items-center">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
-                  class="text-green-600 w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512">
-                  <path fill="currentColor"
-                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                  </path>
-                </svg>Premium snippets
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-
-      <div class="mb-6 lg:mb-0">
-        <div class="block rounded-lg shadow-lg bg-white h-full">
-          <div class="p-6 border-b border-gray-300 text-center">
-            <p class="uppercase mb-4 text-sm">
-              <strong>PLANO EMERALD</strong>
-            </p>
-            <h3 class="text-2xl mb-6">
-              <strong>R$ 50</strong>
-              <small class="text-gray-500 text-sm">/Mês</small>
-            </h3>
-						<button type="button"
-						class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-green-300 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out w-full"
-						data-mdb-ripple="true" data-ripple-color="light">
-						Buy
-					</button>
-          </div>
-          <div class="p-6">
-            <ol class="list-inside" />
-              <li class="mb-4 flex items-center">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
-                  class="text-green-600 w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512">
-                  <path fill="currentColor"
-                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                  </path>
-                </svg>Unlimited updates
-              </li>
-              <li class="mb-4 flex items-center">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
-                  class="text-green-600 w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512">
-                  <path fill="currentColor"
-                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                  </path>
-                </svg>Git repository
-              </li>
-              <li class="mb-4 flex items-center">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
-                  class="text-green-600 w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512">
-                  <path fill="currentColor"
-                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                  </path>
-                </svg>npm installation
-              </li>
-              <li class="mb-4 flex items-center">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
-                  class="text-green-600 w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512">
-                  <path fill="currentColor"
-                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
-                  </path>
-                </svg>Code examples
-              </li>
-              <li class="mb-4 flex items-center">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
-                  class="text-green-600 w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512">
-                  <path fill="currentColor"
-                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="check"
+                  class="text-green-600 w-4 h-4 mr-2"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                  >
                   </path>
                 </svg>Premium snippets
               </li>
               <li class="mb-4 flex items-center">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
-                  class="text-green-600 w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512">
-                  <path fill="currentColor"
-                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="check"
+                  class="text-green-600 w-4 h-4 mr-2"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                  >
                   </path>
                 </svg>Premium support
               </li>
               <li class="mb-4 flex items-center">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
-                  class="text-green-600 w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512">
-                  <path fill="currentColor"
-                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="check"
+                  class="text-green-600 w-4 h-4 mr-2"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                  >
                   </path>
                 </svg>Drag&amp;Drop builder
               </li>
-            </ol>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-</div>
-		<div>
-			<h1>COMO FUNCIONA</h1>
-		</div>
-		<div>
-			<h1>SAIBA MAIS</h1>
-		</div>
-		<div>
-			<h1>SELECIONE SEU PLANO</h1>
-		</div>
-		<div>
-			<h1>FAQ</h1>
-		</div>
+    </section>
+  </div>
 </Layout>
+<div>
+  <h1 id="comoFunciona">COMO FUNCIONA</h1>
+</div>
+<div>
+  <h1 id="saibaMais" >SAIBA MAIS</h1>
+</div>
+<div>
+  <h1 id="FAQ" >FAQ</h1>
+</div>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-family: "Montserrat", Sans-serif;
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 60ch;
+  }
+  h1 {
+    font-family: "Montserrat", Sans-serif;
     font-size: 2.3rem;
     font-weight: 600;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    border: 1px solid rgba(var(--accent), 25%);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  .instructions code {
+    font-size: 0.875em;
+    font-weight: bold;
+    background: rgba(var(--accent), 12%);
+    color: rgb(var(--accent));
+    border-radius: 4px;
+    padding: 0.3em 0.45em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
 </style>
